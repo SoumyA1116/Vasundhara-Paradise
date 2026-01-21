@@ -56,7 +56,7 @@ const App: React.FC = () => {
         <div className="relative z-20 text-center px-8 w-full">
           <div className="mb-6">
              <span className="text-white text-[10px] md:text-[12px] uppercase tracking-[0.5em] font-bold block drop-shadow-md">
-               EST. 1998 • LUCKNOW
+               EST. 1998 • PURI
              </span>
           </div>
           <h1 className="text-[52px] md:text-9xl font-serif text-white mb-6 leading-[1.05] drop-shadow-2xl">
