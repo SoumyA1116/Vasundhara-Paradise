@@ -149,7 +149,7 @@ export const ROOMS: Room[] = [
     capacity: '2 Guests',
     bedType: '1 King Bed',
     size: '15 m² / 161 ft²',
-    amenities: ['4K SMART TV', 'NETFLIX', 'MARBLE BATH'],
+    amenities: ['1 king bed, Private bathroom, Shower, Mirror, Toiletries, Towels, Open air bath privileges, Flat screen TV, Free Wi-Fi, Wireless internet access, Blackout curtains, Fan, Socket near the bed, Desk, Closet, Openable window, Tile or marble flooring, Daily newspaper, Wake-up service, Low floor availability, Trash cans.'],
     idealFor: 'EXECUTIVE SOLO'
   },
   {
