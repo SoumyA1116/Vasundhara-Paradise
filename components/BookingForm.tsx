@@ -10,12 +10,14 @@ const BookingForm: React.FC = () => {
     checkIn: '',
     checkOut: '',
     guests: '1 Adult',
+    children: '0 Children',
+    rooms: '1 Room',
     roomType: ROOMS[0].name
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Luxury Enquiry for Vasundhara Paradise:\n\nGuest: ${form.name}\nWhatsApp: ${form.phone}\nStay: ${form.checkIn} to ${form.checkOut}\nOccupancy: ${form.guests}\nSelected Suite: ${form.roomType}`;
+    const message = `Luxury Enquiry for Vasundhara Paradise:\n\nGuest: ${form.name}\nWhatsApp: ${form.phone}\nStay: ${form.checkIn} to ${form.checkOut}\nOccupancy: ${form.guests}, ${form.children}\nRooms: ${form.rooms}\nSelected Suite: ${form.roomType}`;
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -91,9 +93,30 @@ const BookingForm: React.FC = () => {
 
         <div className="grid grid-cols-2 gap-4">
           <div className="relative">
-            <label className={labelStyles}>Guests</label>
+            <label className={labelStyles}>Adults</label>
             <select className={inputBase} onChange={e => setForm({...form, guests: e.target.value})}>
-              {['1 Adult', '2 Adults', 'Family (3+)', 'Group'].map(o => <option key={o} value={o}>{o}</option>)}
+              {['1 Adult', '2 Adults', '3 Adults', '4 Adults', 'Group (5+)'].map(o => <option key={o} value={o}>{o}</option>)}
+            </select>
+            <div className="absolute right-4 top-[38px] pointer-events-none text-gray-400">
+               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div className="relative">
+            <label className={labelStyles}>Children</label>
+            <select className={inputBase} onChange={e => setForm({...form, children: e.target.value})}>
+              {['0 Children', '1 Child', '2 Children', '3 Children', '4+ Children'].map(o => <option key={o} value={o}>{o}</option>)}
+            </select>
+            <div className="absolute right-4 top-[38px] pointer-events-none text-gray-400">
+               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-4">
+          <div className="relative">
+            <label className={labelStyles}>Rooms</label>
+            <select className={inputBase} onChange={e => setForm({...form, rooms: e.target.value})}>
+              {['1 Room', '2 Rooms', '3 Rooms', '4 Rooms', '5+ Rooms'].map(o => <option key={o} value={o}>{o}</option>)}
             </select>
             <div className="absolute right-4 top-[38px] pointer-events-none text-gray-400">
                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4"><path d="M6 9l6 6 6-6"/></svg>

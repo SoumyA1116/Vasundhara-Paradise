@@ -4,11 +4,12 @@ export interface Room {
   name: string;
   description: string;
   price: string;
-  image: string;
+  images: string[];
   capacity: string;
   bedType: string;
   amenities: string[];
   idealFor: string;
+  size?: string;
 }
 
 export interface Review {
@@ -25,5 +26,7 @@ export interface BookingFormData {
   checkIn: string;
   checkOut: string;
   guests: string;
+  children: string;
+  rooms: string;
   roomType: string;
 }

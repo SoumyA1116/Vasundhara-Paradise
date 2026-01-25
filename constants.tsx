@@ -1,5 +1,4 @@
-
-import { Room, Review } from './types';
+import { Room } from './types';
 
 /**
  * CORE HOTEL CONFIGURATION
@@ -8,7 +7,7 @@ export const HOTEL_NAME = "Vasundhara Paradise";
 export const TAGLINE = "Where Serenity Meets Grandeur.";
 export const PHONE_NUMBER = "+91 98765 43210";
 export const WHATSAPP_NUMBER = "919876543210";
-export const LOCATION_DESC = "Located in the premium district of Gomti Nagar, we offer seamless connectivity to major transit points and scenic landmarks.";
+export const LOCATION_DESC = "Located in the heart of Gomti Nagar, Lucknow's most premium district, offering a perfect blend of executive luxury and traditional warmth.";
 export const MAP_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14236.467364667104!2d80.9859258!3d26.8680482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2939c878957%3A0x6a0a09b3086782c3!2sGomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";
 
 /**
@@ -16,98 +15,279 @@ export const MAP_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m
  */
 export const ABOUT_STORY = {
   title: "A Legacy of Hospitality",
-  content: "For over two decades, Vasundhara Paradise has stood as a beacon of luxury in Lucknow. Our vision is to blend heritage charm with modern executive comfort, serving families, business travelers, and couples with uncompromising standards of safety and cleanliness.",
+  content: "Vasundhara Paradise has been a landmark of luxury in Lucknow. Our vision is to provide a stay with modern executive amenities for families, business travelers, and couples with uncompromising standards of safety.",
   highlights: [
-    "25+ Years of Excellence",
-    "Family & Corporate Friendly",
-    "Highest Hygiene Standards",
-    "Award Winning Concierge"
+    "FAMILY & CORPORATE FRIENDLY",
+    "AWARD WINNING CONCIERGE",
+    "GOMTI NAGAR PRIME LOCATION",
+    "BESPOKE GUEST EXPERIENCES"
+  ],
+  images: {
+    main: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=1200",
+    corner: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=600"
+  }
+};
+
+/**
+ * PROPERTY POLICIES
+ */
+export const PROPERTY_POLICIES = {
+  childrenAndBeds: {
+    title: "Children and extra beds",
+    content: "Extra beds are dependent on the room you choose. Please check the individual room capacity for more details.",
+    minAge: "Minimum age of guests is: 18 year(s)."
+  },
+  others: {
+    title: "Others",
+    rules: [
+      "The property does not accept non-local guests.",
+      "When booking more than 5 rooms, different policies and additional supplements may apply."
+    ]
+  },
+  announcement: "Please note that any changes in tax structure due to government policies will result in revised taxes, which will be applicable to all reservations and will be charged additionally during check out."
+};
+
+/**
+ * HELPFUL FACTS
+ */
+export const HELPFUL_FACTS = {
+  checkInOut: [
+    { label: "Check-in from", value: "09:00 AM", icon: "clock" },
+    { label: "Check-out until", value: "08:00 AM", icon: "clock-out" },
+    { label: "Reception open until", value: "11:00 PM", icon: "bell" },
+    { label: "Check-in until", value: "12:00 PM", icon: "clock-limit" }
+  ],
+  theProperty: [
+    { label: "Number of floors", value: "3", icon: "stairs" },
+    { label: "Room voltage", value: "220V", icon: "bolt" },
+    { label: "Number of rooms", value: "9", icon: "key" },
+    { label: "Non-smoking rooms/floors", value: "Yes", icon: "no-smoking" }
   ]
 };
 
 /**
- * POLICIES & TARIFFS
+ * DETAILED AMENITIES (Mapped to Image Content)
  */
-export const POLICIES = {
-  checkIn: "12:00 PM",
-  checkOut: "11:00 AM",
-  childPolicy: "Children below 5 stay free",
-  extraBed: "₹1,000 per night",
-  idRequired: "Aadhar/Passport/License required for all guests",
-  safetyBadge: "Verified Luxury Stay"
-};
-
-/**
- * ACCESSIBILITY & LANDMARKS
- */
-export const CLOSEST_LANDMARKS = [
-  { name: "Golden Beach", distance: "260 m", icon: "beach" },
-  { name: "Puri Light House", distance: "2.1 km", icon: "lighthouse" },
-  { name: "UPHC, Swargadwar", distance: "2.3 km", icon: "location" },
-  { name: "Puri Rath Yatra", distance: "2.5 km", icon: "event" },
-  { name: "Jagannath Temple", distance: "2.5 km", icon: "temple" }
+export const FULL_AMENITIES_DETAILED = [
+  {
+    category: "Languages spoken",
+    items: [
+      { name: "English", icon: "check" },
+      { name: "Hindi", icon: "check" }
+    ]
+  },
+  {
+    category: "Internet access",
+    items: [
+      { name: "Free Wi-Fi in all rooms!", icon: "wifi" },
+      { name: "Internet", icon: "wifi" },
+      { name: "Wi-Fi in public areas", icon: "wifi" }
+    ]
+  },
+  {
+    category: "Things to do, ways to relax",
+    items: [
+      { name: "Ticket services", icon: "check" },
+      { name: "Tours", icon: "check" }
+    ]
+  },
+  {
+    category: "Services and conveniences",
+    items: [
+      { name: "Daily housekeeping", icon: "check" },
+      { name: "Elevator", icon: "check", unavailable: true },
+      { name: "Food delivery", icon: "check" },
+      { name: "Shared lounge/TV area", icon: "check" },
+      { name: "Smoking area", icon: "check", unavailable: true },
+      { name: "Terrace", icon: "check" }
+    ]
+  },
+  {
+    category: "Access",
+    items: [
+      { name: "CCTV in common areas", icon: "check" },
+      { name: "Couple's room", icon: "check" },
+      { name: "Fire extinguisher", icon: "check" },
+      { name: "Non-smoking rooms", icon: "check" },
+      { name: "Pets allowed", icon: "check", unavailable: true },
+      { name: "Security [24-hour]", icon: "check" }
+    ]
+  },
+  {
+    category: "Getting around",
+    items: [
+      { name: "Car park [on-site]", icon: "car" }
+    ]
+  }
 ];
 
 /**
- * AMENITIES CATALOG
+ * LOCAL LANDMARKS
  */
-export const FULL_AMENITIES = {
-  internet: ["High-speed Fiber", "Public Area Wi-Fi"],
-  services: ["24/7 Room Service", "Daily Housekeeping", "Laundry Service", "Elevator Access"],
-  access: ["24h Security & CCTV", "Fire Safety Systems", "Power Backup", "Ample Parking"],
-  leisure: ["Terrace Lounge", "Shared TV Area"]
-};
+export const CLOSEST_LANDMARKS = [
+  { name: "Ambedkar Memorial Park", distance: "2.5 km", icon: "event" },
+  { name: "Janeshwar Mishra Park", distance: "3.2 km", icon: "event" },
+  { name: "Bara Imambara", distance: "8.5 km", icon: "temple" },
+  { name: "Lucknow Zoo", distance: "5.0 km", icon: "event" },
+  { name: "Amausi Airport (LKO)", distance: "18 km", icon: "location" }
+];
 
 /**
- * ROOMS & SUITES
+ * ROOMS & SUITES (9 Categories)
  */
 export const ROOMS: Room[] = [
   {
-    id: 'standard',
-    name: 'Royal Sanctuary',
-    description: 'A masterpiece of minimalism and comfort for the discerning professional.',
+    id: 'king-bed',
+    name: 'King Bed Room',
+    description: 'A spacious haven with a massive king-sized cloud bed.',
     price: '₹3,499',
-    image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=1000',
+    images: [
+      'https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000'
+    ],
     capacity: '2 Guests',
-    bedType: 'Queen Cloud-Bed',
-    amenities: ['4K Smart TV', 'Italian Marble Bath', 'Pillow Menu', 'Concierge Access'],
-    idealFor: 'Executive Solo'
+    bedType: '1 King Bed',
+    size: '15 m² / 161 ft²',
+    amenities: ['4K SMART TV', 'NETFLIX', 'MARBLE BATH'],
+    idealFor: 'EXECUTIVE SOLO'
   },
   {
-    id: 'deluxe',
-    name: 'Presidential Oasis',
-    description: 'Unrivaled space and bespoke decor with panoramic garden views.',
+    id: 'deluxe-triple',
+    name: 'Deluxe Triple',
+    description: 'Perfect for groups or small families with versatile bedding.',
+    price: '₹4,999',
+    images: [
+      'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1544124499-58912cbddaad?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '3 Guests',
+    bedType: '1 Single + 1 King Bed',
+    size: '22 m² / 236 ft²',
+    amenities: ['WORK DESK', 'GARDEN VIEW', 'MINIBAR'],
+    idealFor: 'SMALL GROUPS'
+  },
+  {
+    id: 'deluxe-double',
+    name: 'Deluxe Double Room',
+    description: 'Intimate space with modern minimalist aesthetics.',
+    price: '₹3,299',
+    images: [
+      'https://images.unsplash.com/photo-1591088398332-8a77d399a80c?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '2 Guests',
+    bedType: '1 King Bed',
+    size: '14 m² / 151 ft²',
+    amenities: ['AMBIENT LIGHTS', 'SMART TV', 'PREMIUM LINEN'],
+    idealFor: 'COUPLES'
+  },
+  {
+    id: 'deluxe-quad',
+    name: 'Deluxe Quadruple Room',
+    description: 'Maximum capacity for the whole family without compromising style.',
     price: '₹5,999',
-    image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000',
-    capacity: '2 Adults + 2 Kids',
-    bedType: 'California King',
-    amenities: ['Private Balcony', 'Wine Cellar', 'Luxury Spa Kit', '24/7 Butler'],
-    idealFor: 'Couples & Small Families'
+    images: [
+      'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1574643156929-51fa098b0394?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '4 Guests',
+    bedType: '2 King Beds',
+    size: '28 m² / 301 ft²',
+    amenities: ['TWIN AC', 'LARGE BATH', 'DINING AREA'],
+    idealFor: 'FAMILIES'
   },
   {
-    id: 'family',
-    name: 'Heritage Villa',
-    description: 'A private residential experience with multiple suites and lush surroundings.',
-    price: '₹9,999',
-    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000',
-    capacity: 'Up to 6 Guests',
-    bedType: 'Grand Royal Beds',
-    amenities: ['Infinity Pool View', 'Full Gourmet Kitchen', 'Home Theater', 'Direct Garden Access'],
-    idealFor: 'Large Families'
+    id: 'deluxe-queen',
+    name: 'Deluxe Queen Room',
+    description: 'Elegant queen-sized accommodation for the modern traveler.',
+    price: '₹3,699',
+    images: [
+      'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '2 Guests',
+    bedType: '1 Queen Bed',
+    size: '16 m² / 172 ft²',
+    amenities: ['RAIN SHOWER', 'WORK STATION', 'WIFI'],
+    idealFor: 'MODERN TRAVELERS'
+  },
+  {
+    id: 'premium',
+    name: 'Premium',
+    description: 'Our flagship suite featuring hand-picked decor and superior comfort.',
+    price: '₹4,499',
+    images: [
+      'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '2 Guests',
+    bedType: '1 King Bed',
+    size: '20 m² / 215 ft²',
+    amenities: ['BATH TUB', 'BALCONY', 'COFFEE MAKER'],
+    idealFor: 'VIP STAY'
+  },
+  {
+    id: 'deluxe-standard',
+    name: 'Deluxe (Standard)',
+    description: 'Unbeatable value for premium comfort in the city.',
+    price: '₹2,999',
+    images: [
+      'https://images.unsplash.com/photo-1505691938895-1758d7eaa511?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '2 Guests',
+    bedType: '1 King Bed',
+    size: '13 m² / 140 ft²',
+    amenities: ['AC', 'WIFI', 'HOT WATER'],
+    idealFor: 'VALUE STAY'
+  },
+  {
+    id: 'assigned-on-arrival',
+    name: 'Room Assigned on Arrival',
+    description: 'Get our best available room at check-in for a discounted price.',
+    price: '₹2,499',
+    images: [
+      'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '2 Guests',
+    bedType: 'Assigned on arrival',
+    size: 'Varies',
+    amenities: ['MYSTERY SELECTION', 'WIFI', 'AC'],
+    idealFor: 'BUDGET SAVVY'
+  },
+  {
+    id: 'city-view',
+    name: 'Deluxe Double Room with City View',
+    description: 'Stunning urban panoramas of Lucknow from your private suite.',
+    price: '₹3,899',
+    images: [
+      'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1000'
+    ],
+    capacity: '2 Guests',
+    bedType: '1 King Bed',
+    size: '17 m² / 183 ft²',
+    amenities: ['CITY VIEW', 'PREMIUM LINEN', 'WIFI'],
+    idealFor: 'SIGHTSEERS'
   }
 ];
 
 export const GALLERY_IMAGES = [
-  "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=800",
-  "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=800"
-];
-
-export const REVIEWS: Review[] = [
-  { id: 1, author: "Aditya Malhotra", rating: 5, text: "The attention to detail is staggering. Truly premium experience.", date: "March 2024" },
-  { id: 2, author: "Ishani Gupta", rating: 5, text: "Every corner is a photograph. Luxury redefined.", date: "Feb 2024" },
-  { id: 3, author: "Vikram Seth", rating: 5, text: "Best stay in Lucknow for business trips.", date: "Jan 2024" }
+  "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1574643156929-51fa098b0394?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=1200",
+  "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&q=80&w=1200"
 ];
