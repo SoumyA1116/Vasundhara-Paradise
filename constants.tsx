@@ -165,7 +165,7 @@ export const ROOMS: Room[] = [
     capacity: '3 Guests',
     bedType: '1 Single + 1 King Bed',
     size: '22 m² / 236 ft²',
-    amenities: ['WORK DESK', 'GARDEN VIEW', 'MINIBAR'],
+    amenities: ['1 single bed and 1 king bed, Private bathroom, Shower, Mirror, Open air bath privileges, Flat screen TV, Free Wi-Fi, Wireless internet access, Air conditioning, Individual air conditioning, Fan, Blackout curtains, Sleep comfort items, Free bottled water, Desk, Socket near the bed, Openable window, Tile or marble flooring, Daily newspaper, Accessible by stairs, Trash cans.'],
     idealFor: 'SMALL GROUPS'
   },
   {
@@ -180,7 +180,7 @@ export const ROOMS: Room[] = [
     capacity: '2 Guests',
     bedType: '1 King Bed',
     size: '14 m² / 151 ft²',
-    amenities: ['AMBIENT LIGHTS', 'SMART TV', 'PREMIUM LINEN'],
+    amenities: ['1 king bed, Private bathroom, Shower, Mirror, Open air bath privileges, Flat screen TV, Free Wi-Fi, Wireless internet access, Air conditioning, Individual air conditioning, Fan, Blackout curtains, Sleep comfort items, Free bottled water, Desk, Socket near the bed, Openable window, Tile or marble flooring, Daily newspaper, Accessible by stairs, Trash cans.'],
     idealFor: 'COUPLES'
   },
   {
@@ -196,7 +196,7 @@ export const ROOMS: Room[] = [
     capacity: '4 Guests',
     bedType: '2 King Beds',
     size: '28 m² / 301 ft²',
-    amenities: ['TWIN AC', 'LARGE BATH', 'DINING AREA'],
+    amenities: ['2 king beds, Private bathroom, Toiletries, Free Wi-Fi, Individual air conditioning, Fan, Blackout curtains, Sleep comfort items, Free bottled water, Socket near the bed, Clothes rack, Daily newspaper, Wake-up service, Ground or low floor available, Accessible by stairs, Trash cans, Safety and security features.'],
     idealFor: 'FAMILIES'
   },
   {
@@ -211,7 +211,7 @@ export const ROOMS: Room[] = [
     capacity: '2 Guests',
     bedType: '1 Queen Bed',
     size: '16 m² / 172 ft²',
-    amenities: ['RAIN SHOWER', 'WORK STATION', 'WIFI'],
+    amenities: ['1 queen bed, Private bathroom, Toiletries, Free Wi-Fi, Fan, Sleep comfort items, Window, Tile or marble flooring, Low floor available, Accessible by stairs, Smoking allowed, Safety and security features.'],
     idealFor: 'MODERN TRAVELERS'
   },
   {
@@ -227,7 +227,7 @@ export const ROOMS: Room[] = [
     capacity: '2 Guests',
     bedType: '1 King Bed',
     size: '20 m² / 215 ft²',
-    amenities: ['BATH TUB', 'BALCONY', 'COFFEE MAKER'],
+    amenities: ['1 king bed, Private bathroom, Shower, Toiletries, Towels, Blackout curtains, Socket near the bed, Kettle, High floor, Openable window, Accessible by stairs, Trash cans.'],
     idealFor: 'VIP STAY'
   },
   {
