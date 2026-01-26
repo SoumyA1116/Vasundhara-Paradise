@@ -154,7 +154,7 @@ const App: React.FC = () => {
           <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=2000" alt="Hero" className="w-full h-full object-cover animate-zoom" />
         </div>
         <div className="relative z-20 text-center px-8 w-full max-w-4xl">
-          <div className="mb-6"><span className="text-white text-[10px] md:text-sm uppercase tracking-[0.5em] font-bold block drop-shadow-md">EST. 1998 • LUCKNOW</span></div>
+          <div className="mb-6"><span className="text-white text-[10px] md:text-sm uppercase tracking-[0.5em] font-bold block drop-shadow-md">EST. 1998 • PURI</span></div>
           <h1 className="text-5xl md:text-9xl font-serif text-white mb-6 leading-tight drop-shadow-2xl">{HOTEL_NAME.split(' ')[0]}<br/>{HOTEL_NAME.split(' ')[1]}</h1>
           <p className="text-[10px] md:text-xl text-white/90 font-light tracking-[0.4em] uppercase mb-12 italic leading-relaxed">{TAGLINE}</p>
           <div className="flex flex-col gap-4 max-w-[280px] mx-auto md:flex-row md:max-w-none md:justify-center">
@@ -412,7 +412,7 @@ const App: React.FC = () => {
 
       <footer className="bg-white py-16 border-t border-gray-100 text-center rounded-t-[3rem]">
         <div className="text-2xl font-serif font-bold tracking-tight text-gray-900 mb-3">{HOTEL_NAME}</div>
-        <p className="text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em] mb-8">Lucknow • Gomti Nagar • {new Date().getFullYear()}</p>
+        <p className="text-[10px] text-gray-400 font-bold uppercase tracking-[0.3em] mb-8">PURI • {new Date().getFullYear()}</p>
         <div className="pt-8 border-t border-gray-50 max-w-xs mx-auto">
           <p className="text-[10px] text-gray-400 font-medium uppercase tracking-widest">
             Designed and Developed by <br/>

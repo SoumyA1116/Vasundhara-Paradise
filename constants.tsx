@@ -5,26 +5,26 @@ import { Room } from './types';
  */
 export const HOTEL_NAME = "Vasundhara Paradise";
 export const TAGLINE = "Where Serenity Meets Grandeur.";
-export const PHONE_NUMBER = "+91 98765 43210";
-export const WHATSAPP_NUMBER = "919876543210";
-export const LOCATION_DESC = "Located in the heart of Gomti Nagar, Lucknow's most premium district, offering a perfect blend of executive luxury and traditional warmth.";
-export const MAP_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14236.467364667104!2d80.9859258!3d26.8680482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2939c878957%3A0x6a0a09b3086782c3!2sGomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin";
+export const PHONE_NUMBER = "+91 89262 61577";
+export const WHATSAPP_NUMBER = "918926261577";
+export const LOCATION_DESC = "Located in the heart of Puri, Puri's most premium district, offering a perfect blend of executive luxury and traditional warmth.";
+export const MAP_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.1831570987497!2d85.7997389!3d19.7898302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19c5357365f15d%3A0xd0487355c0fc8805!2sVasundhara%20Paradise!5e0!3m2!1sen!2sin!4v1769365967775!5m2!1sen!2sin";
 
 /**
  * BRAND STORY
  */
 export const ABOUT_STORY = {
   title: "A Legacy of Hospitality",
-  content: "Vasundhara Paradise has been a landmark of luxury in Lucknow. Our vision is to provide a stay with modern executive amenities for families, business travelers, and couples with uncompromising standards of safety.",
+  content: "Vasundhara Paradise has been a landmark of luxury in Puri. Our vision is to provide a stay with modern executive amenities for families, business travelers, and couples with uncompromising standards of safety.",
   highlights: [
     "FAMILY & CORPORATE FRIENDLY",
     "AWARD WINNING CONCIERGE",
-    "GOMTI NAGAR PRIME LOCATION",
+    "PURI PRIME LOCATION",
     "BESPOKE GUEST EXPERIENCES"
   ],
   images: {
-    main: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&q=80&w=1200",
-    corner: "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=600"
+    main: "https://i.ibb.co/b5pmVDPn/image.png?auto=format&fit=crop&q=80&w=1200",
+    corner: "https://i.ibb.co/7JrcsJ5m/image.png?auto=format&fit=crop&q=80&w=600"
   }
 };
 
@@ -125,11 +125,10 @@ export const FULL_AMENITIES_DETAILED = [
  * LOCAL LANDMARKS
  */
 export const CLOSEST_LANDMARKS = [
-  { name: "Ambedkar Memorial Park", distance: "2.5 km", icon: "event" },
-  { name: "Janeshwar Mishra Park", distance: "3.2 km", icon: "event" },
-  { name: "Bara Imambara", distance: "8.5 km", icon: "temple" },
-  { name: "Lucknow Zoo", distance: "5.0 km", icon: "event" },
-  { name: "Amausi Airport (LKO)", distance: "18 km", icon: "location" }
+  { name: "Puri Beach", distance: "3.1 km", icon: "sea" },
+  { name: "Swargadwar Beach", distance: "2.1 km", icon: "sea" },
+  { name: "Blue Flag Beach", distance: "4.4 km", icon: "sea" }
+  
 ];
 
 /**
@@ -263,7 +262,7 @@ export const ROOMS: Room[] = [
   {
     id: 'city-view',
     name: 'Deluxe Double Room with City View',
-    description: 'Stunning urban panoramas of Lucknow from your private suite.',
+    description: 'Stunning urban panoramas of Puri from your private suite.',
     price: '₹3,899',
     images: [
       'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&q=80&w=1000',
